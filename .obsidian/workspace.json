@@ -63,9 +63,37 @@
               "icon": "lucide-file",
               "title": "Readme"
             }
+          },
+          {
+            "id": "d8cd3b3e5a0b03a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Unreal/TObjectPtr.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TObjectPtr"
+            }
+          },
+          {
+            "id": "88f27ab09b1044fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Unreal/TObjectPtr.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TObjectPtr"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       },
       {
         "id": "e28ef7c788ad8881",
@@ -155,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Readme.md",
+                "file": "Unreal/TObjectPtr.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +193,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Readme"
+              "title": "Backlinks for TObjectPtr"
             }
           },
           {
@@ -174,12 +202,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Readme.md",
+                "file": "Unreal/TObjectPtr.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Readme"
+              "title": "Outgoing links from TObjectPtr"
             }
           },
           {
@@ -203,13 +231,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Readme.md",
+                "file": "Unreal/TObjectPtr.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Readme"
+              "title": "Outline of TObjectPtr"
             }
           }
         ]
@@ -229,12 +257,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b72d831fccc3f6d7",
+  "active": "88f27ab09b1044fc",
   "lastOpenFiles": [
     "Algorithm_DataStructure/BinaryTrees/Binary Trees.md",
-    "Algorithm_DataStructure/Landing Page.md",
-    "Readme.md",
     "Algorithm_DataStructure/StateMachine/State Machine.md",
+    "Algorithm_DataStructure/Landing Page.md",
+    "Unreal/TObjectPtr.md",
+    "Unreal/LandingPage.md",
+    "Readme.md",
+    "Unreal/Untitled",
+    "Unreal",
     "Algorithm_DataStructure/StateMachine",
     "Algorithm_DataStructure/BinaryTrees",
     "Computer_Sciences",
