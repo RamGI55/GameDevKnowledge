@@ -1,12 +1,13 @@
 This repository is for the people who are preparing the interview questions or getting the basic knowledge as a game developer, as a personal note of mine. 
 
 ### Contents  
-C++ basics
-Conceptual Computer Science Knowledge, 
-Algorithms and Data Structures 
-Mathematics, 
-Unreal Engine Knowledge 
-and some interview questions as a further update. 
+This note will includes: 
+- C++ Basics 
+- Algorithm and Data Structure 
+- Computer Science Knowledge 
+- Mathematics for Game Devs 
+- Unreal Questions 
+- and... A pack of interview question
 
 ### Recent Update 
 v 0.0.1 
