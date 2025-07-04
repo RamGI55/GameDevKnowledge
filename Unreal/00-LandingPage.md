@@ -4,6 +4,7 @@ This is for the note on the introduction to Unreal Engine knowledge, which is fo
 
 - Gameplay Architectures 
 
+
 - Game Objects 
 	[[Unreal Object]]
 	[[FObjectFlagsEnum]]
@@ -11,7 +12,12 @@ This is for the note on the introduction to Unreal Engine knowledge, which is fo
 
 - Functions 
 
-- Optimisations 
+
+- Memory Management 
+	[[Memory Management]]
 	[[TObjectPtr]]
+
+- Optimisations 
+
 
 - Technical Arts 
