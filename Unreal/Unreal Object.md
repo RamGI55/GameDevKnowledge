@@ -127,9 +127,9 @@ More specifically, `UPROPERTY` pointers, engine containers, `TObjectStrongPtr`, 
 
 However, `TObjectWeakPtr` or soft references has no impact on whether an Object is garbage collected or not, which is only referenced when it used it. 
 
-C++ Smarter pointer is not intended to be used with UObjects, strongly recommanded to use `TObjectWeakPtr` or macro instead of the C++ style of smarter pointer, for compatitiblity with the object management system in Unreal. 
+C++ Smarter pointer is not intended to be used with UObjects, strongly recommended to use `TObjectWeakPtr` or macro instead of the C++ style of smarter pointer, for compatibility with the object management system in Unreal. 
 
-#### Garbarge Collection in UE5 and Best Practices 
+#### Garbage Collection in UE5 and Best Practices 
 ##### Key Changes
 
 - **API Change**: `MarkPendingKill()` → `MarkAsGarbage()`
@@ -145,15 +145,20 @@ C++ Smarter pointer is not intended to be used with UObjects, strongly recommand
 
 ##### Best Practices
 
-- Use `IsValid()` to check if pointer is null or garbage
+- Use `IsValid()` to check if the pointer is null or garbage
 - When `gc.PendingKillEnabled=false`:
     - Pointers won't auto-null
     - Must manually clear references
-    - Even destroyed Actors remain in memory until all references cleared
+    - Even destroyed Actors remain in memory until all references are cleared
 - Consider implementing `OnDestroyed` callbacks for proper cleanup
 
-#### Summary 
+#### Summary
 
+Unreal Engine manages all of the objects under its object handling system as `UObject`, which is maintained as the CDO; it is loaded when the engine is running. 
+
+All `UObject`s have a unique macro which makes the object under influence in the engine's object management system, including the garbage collector
+
+Unreal Engine Objects can be updated by the `Tick()` in real-time, and once it is destroyed, the strong references are no longer valid and collected by garbage collector. 
 
 #### References 
 
