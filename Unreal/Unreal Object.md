@@ -26,7 +26,7 @@ UObject should only be constructed using NewObject at runtime, or CreateDefaultS
 | `CreateDefaultSubObject<class>` | Creates a component or subobject that provides a method for creating a child class and returning the parent class.<br><br>*When creating a default subobject, because they are constructed at engine startup, the class constructor of a UObject should only work with local data or load static assets.* |
 | `NewObject<class>`              | Creates a new instance with optional parameters for all available creation options. Offers a wide range of flexibility, including simple use cases with an automatically generated name.                                                                                                                  |
 | `new`                           | Create the object in the specific low-level environment, similar as the C++ `new`                                                                                                                                                                                                                         |
-#### UObject Instance Generation 
+#### Create UObject Instance 
 
 ##### NewObject
 
@@ -62,7 +62,6 @@ T* NewObject
 
 You can also designate the new object name and template object as the variable of the new object. Flag is the FObjectFlagsEnum value which can set the object type, gabarge collection rules and object lifetime. 
 
-
 | Type               | Name                 | Description                                                                             | When to Use                                                                                                                                   |
 | ------------------ | -------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | Object type        | `RF_Public`          | This object is visible outside its containing package.                                  | - When creating assets that can be referenced from other packages<br>- Objects that should appear in the Content Browser in the editor        |
@@ -71,7 +70,7 @@ You can also designate the new object name and template object as the variable o
 |                    | `RF_TagGarbargeTemp` | This object is marked for use by various utilities that use garbage collection.         | - When temporary marking is needed during garbage collection<br>- When implementing custom garbage collection utilities                       |
 | Object Lifetime    | `RF_AsyncLoading`    | This object is being loaded asynchronously.                                             | - When loading assets in the background<br>- When tracking object state in streaming systems                                                  |
 |                    | `RF_NeedPostLoad`    | This object needs to be post-loaded.                                                    | - When an object requires additional initialisation after deserialisation<br>- Objects that need PostLoad() to be called                      |
-Check the note for the more specific examples of the each flags. [[FObjectFlagsEnum]]
+Check the note for the more specific examples of the each flags. [[FObjectFlagsEnum]][^2]
 
 
 #### Property and Function Types 
@@ -163,3 +162,5 @@ Unreal Engine Objects can be updated by the `Tick()` in real-time, and once it i
 #### References 
 
 [^1]: https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine#defaultmemberinitializers
+
+[^2]: https://dev.epicgames.com/documentation/en-us/unreal-engine/creating-objects-in-unreal-engine

@@ -9,7 +9,7 @@ TObjectPtr is commonly used in member variable declarations; however, the raw po
 #### Benefits of the TObjectPtr 
 
 As long as TObjectPtr<t*> has the dynamic resolution in the editor build. It helps the virtualised assets system. 
-TObjectPtr also has access tracking, which provides better debugging capabilities in development.
+TObjectPtr also features access tracking, providing enhanced debugging capabilities during development.
 Also, using the TObjectPtr didn't impact the performance in the shipping version of the product, but it may improve the user experience in the editor builds.
 
 Overall, TObjectPtr has a decent benefit in the development environment, without any behaviour and performance changes in the shipping version. 
