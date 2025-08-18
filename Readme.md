@@ -10,6 +10,8 @@ This note will includes:
 - and... A pack of interview question
 
 ### Recent Update 
+v 0.0.2 
+- Add the OpenGL Section for new project. 
 v 0.0.1 
 - Initial update of the note.
 - Updated the draft of the binary trees and state machine.
