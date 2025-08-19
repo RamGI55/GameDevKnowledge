@@ -14,14 +14,16 @@ This is for the note on the introduction to Unreal Engine knowledge, which is fo
 
 
 - Memory Management 
-	[[Memory Management]]
+	[[Reflection System & Garbage Collection]]
 	[[TObjectPtr]]
 
 - Optimisations 
-
+	[[Irritation and Performance]]
 
 - Technical Arts 
 
+
+- Game Ability System
 
 
 - Interview Questions 
