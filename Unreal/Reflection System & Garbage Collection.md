@@ -74,6 +74,8 @@ EInternalObjectFlags GMaybeUnreachableObjectFlag = EInternalObjectFlags::Reachab
 As the code snippet, unreal engine defines three type of the object based on the reachability and optimise the traversal logic, only works to the unreachable objects. 
 
 
+
+
 2. **Sweep Phase (Object Destruction)**
 	- Collect and destroy `Unreachable` objects, with calling `ConditionalBeginDestroy()` and `ConditionalFinishDestory()` 
 
@@ -249,3 +251,11 @@ GetWorld()->ForceGarbargeCollection(true);
 // or 
 GEngine->ForceGarbargeCollection(); 
 ```
+
+
+#### Debugging the Garbage Collection 
+
+`log loggarbage verbose` on the console command and changed the verbosity level of the log garbage channel to get some garbage collection stats in the log. 
+
+`obj gc` can trigger the garbage collector manually, in the console. 
+
