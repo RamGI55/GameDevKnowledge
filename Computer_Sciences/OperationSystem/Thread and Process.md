@@ -1,16 +1,22 @@
 #### Recalled the 4 Fundamental OS concepts
-- Thread : Execution context 
-	- Fully describes program state 
+- Thread: Execution context 
+	- Fully describes the program state 
 	- program counter, registers, execution flags, and stack 
 - Address Space (with or w/o translation)
-	- Set of  memory addresses accessible to program (for read or write)
-	- Distinct from memory space of the physical machine, in which case the program operate in virtual address space OS given 
-- Process : an instance of the running programme 
+	- A set of  memory addresses accessible to a program (for read or write)
+	- Distinct from the memory space of the physical machine, in which case the program operates in the virtual address space OS. 
+- Process: an instance of the running programme
 	- Protected address space + one or more threads
+	- Process changes its state. 
+- 
+
+###### Process is not the same as Programme! 
+> *We emphasise that a program by itself is not a process. A program is a passive entity, such as a file containing a list of instructions stored on disk (often called an executable file). In contrast, a process is an active entity, with a program counter specifying the next instruction to execute and a set of associated resources.*
+> *- 3.1 process concept, Operating System Concepts 10th, 2018.* 
 
 - Dual mode operation/Protection 
-	- Only system has the ability to access certain resources. 
-	- combined with translation, isolates programs from each other and the OS from programmes. 
+	- Only the system can access certain resources. 
+	- Combined with translation, isolates programs from each other and the OS from programs. 
 
 Threads are not physical core - the virtual cores when it is resident in the processor's registers. 
 
