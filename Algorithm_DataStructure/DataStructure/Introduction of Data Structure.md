@@ -2,9 +2,9 @@
 
 Interface (API/ADT) offers 
 - the specification 
-- Specify **what** data can store. 
-- What operation are supported and what they mean 
-- what the problems was
+- Specify **what** data can be stored. 
+- What operations are supported and what they mean 
+- What are the problems?
 
 Data Structure offers 
 - Representation 
