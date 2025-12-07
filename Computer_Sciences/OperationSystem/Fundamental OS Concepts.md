@@ -2,7 +2,7 @@
 #### Thread 
 - Fully describes the program state 
 - Program Counter, registers, execution flags, stack 
-- Thread is executing on a processor core when it is resident in the processor registers. 
+- The thread is executing on a processor core when it is resident in the processor registers. 
 
 Resident and thread working 
 
@@ -34,9 +34,13 @@ Processes protect each other; the OS protects the processes.
 
 Trade off the protection of the process 
 
-
+###### Process is not the same as Programme! 
+> *We emphasise that a program by itself is not a process. A program is a passive entity, such as a file containing a list of instructions stored on disk (often called an executable file). In contrast, a process is an active entity, with a program counter specifying the next instruction to execute and a set of associated resources.*
+> *- 3.1 process concept, Operating System Concepts 10th edition, 2018.* 
 
 ### Process Creation 
+Use `fork()` or `CreateProcess()`
+
 The parent -> issues the pid (int) -> `pid = fork()` 
 
 -> if `pid = 0 (child) ` -> exec() - > exit () 
@@ -62,7 +66,7 @@ The parent -> issues the pid (int) -> `pid = fork()`
 
 ### Interprocess Communications 
 https://learn.microsoft.com/en-us/windows/win32/ipc/interprocess-communications
-Interprocess Communications a.k.a IPC, is the mechanism to share information between processes or applications. Like an intercommunication system between processes. 
+Interprocess Communications, a.k.a IPC, is the mechanism to share information between processes or applications. Like an intercommunication system between processes. 
 
 Client - the process or application takes the information
 Server - the process or application gives the information. 
@@ -83,18 +87,18 @@ Message passing, on the other hand, it provided the mechanism
 
 
 ##### Case Study - Windows 
-Using advance procedual call (ALPC) for communicating the two processes, which maintains two types of the ports to communicate; connection ports and communication ports. 
+Using advance procedural call (ALPC) for communicating the two processes, which maintains two types of the ports to communicate; connection ports and communication ports. 
 
-Once the ALPC is estabilished, one of third information passing techniques chosen; 
-1. Using port's message queue if the message is small enough (256 bytes)
+Once the ALPC is established, one of third information passing techniques chosen; 
+1. Using the port's message queue if the message is small enough (256 bytes)
 2. If the message is large enough must be passed thorugh a section object; the region of the shared memory. 
-3. If the data is too large to store it in section object, then directly read and write into the client address space of the client. 
+3. If the data is too large to store it in a section object, then directly read and write into the client address space of the client. 
 
 ### Communication Client-Server
-has two strategies on communication between client and server - socket and RPC (remote procedure calls).
-
 ##### Sockets 
 - A socket means the endpoint of the communication. 
+- A pair of processes communicating over a network employs a pair of sockets; one for each process. 
+- IP address with port number-> Can identify the sockets. 
 
 ##### RPC (Remote Procedure Calls)
 
